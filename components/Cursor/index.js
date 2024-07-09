@@ -23,7 +23,7 @@ const Cursor = () => {
       {mount && (
         <CustomCursor
           targets={[".link"]}
-          customClass="custom-cursor"
+          //customClass="custom-cursor"
           dimensions={30}
           fill={getCusomColor()}
           smoothness={{
@@ -33,7 +33,7 @@ const Cursor = () => {
           }}
           targetOpacity={0.5}
           targetScale={2}
-        />
+          style={{ cursor: "pointer" }} />
       )}
     </>
   );
